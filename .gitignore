@@ -263,3 +263,4 @@ gradle-app.setting
 !.vscode/extensions.json
 
 guestApp/firebase\.json
+guestApp/Components/Screens/variables\.js

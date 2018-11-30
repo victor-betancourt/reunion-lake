@@ -5,6 +5,8 @@ import { Button, Icon, Container, Header, Content, Left, Right } from 'native-ba
 
 import FBData from './FBData';
 
+import {FBKey} from './variables'
+
 //I've disabled phone orientation for now..
 Expo.ScreenOrientation.allow(Expo.ScreenOrientation.Orientation.PORTRAIT_UP);
 
@@ -25,7 +27,7 @@ class ActivitiesScreen extends React.Component {
   }
 
   getFeedData() {
-    return fetch('https://graph.facebook.com/v3.1/reunionlakervresort/posts?fields=full_picture,message,created_time&access_token=EAAeUjPpar4wBAL1AQbIJaooJkbQNx2ZBrvG9jipuxLBfB0l2IilBDBImRFNo2O2ayqwyk5J70FEknLEmMzarPukZBaVSSvT2nAGaxjyi1GZA6yvXQqV6tQeCFJT2M7O8nog2GZBtRgAg7ZAppy8O47TkyBa49PfQZD')
+    return fetch('https://graph.facebook.com/v3.1/reunionlakervresort/posts?fields=full_picture,message,created_time&access_token='+FBKey)
     .then((response) => response.json())
     .then((responseJson) => {
 
