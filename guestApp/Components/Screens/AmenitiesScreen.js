@@ -23,20 +23,7 @@ class AmenitiesScreen extends React.Component {
   constructor() {
     super()
     this.state = {
-      show: false,
-      show1: false,
-      show2: false,
-      show3: false,
-      show4: false,
-      show5: false,
-      show6: false,
-      show7: false,
-      show8: false,
-      show9: false,
-      show10: false,
-      show11: false,
-      show12: false,
-      show13: false
+      show: '0'
     }
   }
   static navigationOptions = {
@@ -80,7 +67,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Campground Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show}
+            visible={this.state.show=='00'}
             onRequestClose={() => console.warn("close request")}>
             <View style={{ flexGrow: 1 }}>
               <ImageBackground
@@ -100,20 +87,7 @@ class AmenitiesScreen extends React.Component {
               <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -127,20 +101,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Campground Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: true,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '00'
             })
           }
           }>
@@ -158,7 +119,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Lazy River Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show1}
+            visible={this.state.show=='1'}
             onRequestClose={() => console.warn("close request")}>
             
             <View style={{flexGrow: 1}}>
@@ -182,20 +143,7 @@ class AmenitiesScreen extends React.Component {
             <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -209,20 +157,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Lazy River Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: true,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '1'
             })
           }
           }>
@@ -240,7 +175,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Family Pool Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show2}
+            visible={this.state.show=='2'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <View style={styles.imgBanner}>
@@ -267,20 +202,7 @@ class AmenitiesScreen extends React.Component {
               <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -292,20 +214,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Family Pool Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: true,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '2'
             })
           }
           }>
@@ -323,7 +232,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Tiki Bar Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show3}
+            visible={this.state.show=='3'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -343,20 +252,7 @@ class AmenitiesScreen extends React.Component {
             <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -369,20 +265,7 @@ class AmenitiesScreen extends React.Component {
             {/* Start of the Tiki Bar Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: true,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '3'
             })
           }
           }>
@@ -400,7 +283,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Swim up Bar Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show4}
+            visible={this.state.show=='4'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -421,20 +304,7 @@ class AmenitiesScreen extends React.Component {
             <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -447,20 +317,7 @@ class AmenitiesScreen extends React.Component {
             {/* Start of the Swim up Bar Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: true,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '4'
             })
           }
           }>
@@ -478,7 +335,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Poolside Cabana Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show5}
+            visible={this.state.show=='5'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <View style={styles.imgBanner}>
@@ -504,20 +361,7 @@ class AmenitiesScreen extends React.Component {
             <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -530,20 +374,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Poolside Cabana Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: true,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '5'
             })
           }
           }>
@@ -561,7 +392,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Hot tub Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show6}
+            visible={this.state.show=='6'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -583,20 +414,7 @@ class AmenitiesScreen extends React.Component {
             <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -609,20 +427,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Hot Tub Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: true,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '6'
             })
           }
           }>
@@ -640,7 +445,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Mini Golf Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show7}
+            visible={this.state.show=='7'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <View style={styles.imgBanner}>
@@ -665,20 +470,7 @@ class AmenitiesScreen extends React.Component {
               <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -691,20 +483,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Mini Golf Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: true,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '7'
             })
           }
           }>
@@ -722,7 +501,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Playground Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show8}
+            visible={this.state.show=='8'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -743,20 +522,7 @@ class AmenitiesScreen extends React.Component {
               <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -769,20 +535,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Playground Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: true,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '8'
             })
           }
           }>
@@ -800,7 +553,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Amphitheater Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show9}
+            visible={this.state.show=='9'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <View style={styles.imgBanner}>
@@ -826,20 +579,7 @@ class AmenitiesScreen extends React.Component {
                 <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -852,20 +592,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Amphitheater Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: true,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '9'
             })
           }
           }>
@@ -883,7 +610,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the General Store Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show10}
+            visible={this.state.show=='10'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <View style={styles.imgBanner}>
@@ -906,20 +633,7 @@ class AmenitiesScreen extends React.Component {
                 <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -932,20 +646,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the General Store Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: true,
-              show11: false,
-              show12: false,
-              show13: false
+              show: '10'
             })
           }
           }>
@@ -963,7 +664,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Dog Park Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show11}
+            visible={this.state.show=='11'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -984,20 +685,7 @@ class AmenitiesScreen extends React.Component {
                 <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -1010,20 +698,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Dog Park Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: true,
-              show12: false,
-              show13: false
+              show: '11'
             })
           }
           }>
@@ -1041,7 +716,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Fitness Center Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show12}
+            visible={this.state.show == '12'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -1063,20 +738,7 @@ class AmenitiesScreen extends React.Component {
                 <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -1089,20 +751,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Fitness Center Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: true,
-              show13: false
+              show: '12'
             })
           }
           }>
@@ -1120,7 +769,7 @@ class AmenitiesScreen extends React.Component {
           {/* Start of the Courts Modal */}
           <Modal 
             animationType="slide"
-            visible={this.state.show13}
+            visible={this.state.show=='13'}
             onRequestClose={() => console.warn("close request")}>  
             <View style={{flexGrow: 1}}>
             <ImageBackground
@@ -1140,20 +789,7 @@ class AmenitiesScreen extends React.Component {
               <Icon name='md-close-circle'
                   onPress={() => {
                     this.setState({
-                      show: false,
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: false,
-                      show6: false,
-                      show7: false,
-                      show8: false,
-                      show9: false,
-                      show10: false,
-                      show11: false,
-                      show12: false,
-                      show13: false
+                      show: '0'
                     })
                   }
                   }
@@ -1166,20 +802,7 @@ class AmenitiesScreen extends React.Component {
               {/* Start of the Courts Button */}
           <TouchableOpacity onPress={() => {
             this.setState({
-              show: false,
-              show1: false,
-              show2: false,
-              show3: false,
-              show4: false,
-              show5: false,
-              show6: false,
-              show7: false,
-              show8: false,
-              show9: false,
-              show10: false,
-              show11: false,
-              show12: false,
-              show13: true
+              show: '13'
             })
           }
           }>
