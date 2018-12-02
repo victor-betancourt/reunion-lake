@@ -25,22 +25,19 @@ const window = Dimensions.get('window');
 class HomeScreen extends React.Component {
 
   componentDidMount() {
-    firebase.auth().signInAnonymously()
-    firebase.auth().onAuthStateChanged(user => {
-        this.registerForPushNotificationsAsync(user)
-      })
+        this.registerForPushNotificationsAsync()
   }
 
   //from expo's documentationss
   //see: https://docs.expo.io/versions/latest/guides/push-notifications
   //on IOS this will ask for permission and send expo token to Firebase
   //on Android this does not prompt for permission but still sends expo token to Firebase
-  registerForPushNotificationsAsync = async (user) => {
+  registerForPushNotificationsAsync = async () => {
     const { status: existingStatus } = await Permissions.getAsync(
       Permissions.NOTIFICATIONS
     );
     let finalStatus = existingStatus;
-  
+    
     // only ask if permissions have not already been determined, because
     // iOS won't necessarily prompt the user a second time.
     if (existingStatus !== 'granted') {
@@ -49,16 +46,17 @@ class HomeScreen extends React.Component {
       const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
       finalStatus = status;
     }
-  
+    
     // Stop here if the user did not grant permissions
     if (finalStatus !== 'granted') {
       return;
     }
-  
-    // Get the token that uniquely identifies this device
-    let token = await Notifications.getExpoPushTokenAsync();
     
-    firebase.database().ref('tokens').child(user.uid).update({ token: token })
+    // Get the token that uniquely identifies this device
+    let token = await Notifications.getExpoPushTokenAsync()
+    var id = token.replace(/ExponentPushToken|[[\]]/g, '')
+    
+    firebase.database().ref('tokens').child(id).update({ token: token })
 
   }
 

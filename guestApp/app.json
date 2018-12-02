@@ -10,11 +10,6 @@
     },
     "notification": {
       "icon": "./Assets/reunion_icon.png"
-    },
-    "android": {
-      "icon": "./Assets/reunion_icon.png",
-      "package": "com.reunionlakerv.reunionlakeapp",
-      "googleServicesFile": "./google-services.json"
     }
   }
 }
